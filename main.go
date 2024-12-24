@@ -3,11 +3,11 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"servers/logger"
+	"servers/logger_1"
 )
 
 func main() {
-	var logger = logger.InitLogger()
+	var logger = logger_1.InitLogger()
 
 	router := gin.Default()
 	router.GET("/Hi", func(c *gin.Context) {
