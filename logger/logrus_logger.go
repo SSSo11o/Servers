@@ -6,7 +6,7 @@ import (
 
 var log *logrus.Logger
 
-func InitLoggerr() *logrus.Logger {
+func InitLogger() *logrus.Logger {
 	log = logrus.New()
 	log.SetFormatter(&logrus.JSONFormatter{})
 	log.SetLevel(logrus.InfoLevel)
