@@ -4,6 +4,8 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+var log *logrus.Logger
+
 func InitLogger() *logrus.Logger {
 	log = logrus.New()
 	log.SetFormatter(&logrus.JSONFormatter{})
